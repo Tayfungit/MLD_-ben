@@ -24,14 +24,14 @@ gearing_type=st.sidebar.radio('Getriebetyp wählen',('Automatisch','Manual','Hal
 car_model=st.sidebar.selectbox("Wählen Sie Ihr Fahrzeugmodell aus", ('A1', 'A2', 'A3','Astra','Clio','Corsa','Espace','Insignia'))
 
 
-model_name=st.selectbox("Wählen Sie Ihr Modell:",("XGBOOST","Random Forest"))
+# model_name=st.selectbox("Wählen Sie Ihr Modell:",("XGBOOST","Random Forest"))
 
-if model_name=="XGBOOST":
-	model=pickle.load(open("xgb_model","rb"))
-	st.success("Sie haben das Modell {} ausgewählt".format(model_name))
-else :
-	model=pickle.load(open("rf_model","rb"))
-	st.success("Sie haben das Modell {} ausgewählt".format(model_name))
+# if model_name=="XGBOOST":
+model=pickle.load(open("xgb_model","rb"))
+# 	st.success("Sie haben das Modell {} ausgewählt".format(model_name))
+# else :
+# 	model=pickle.load(open("rf_model","rb"))
+# 	st.success("Sie haben das Modell {} ausgewählt".format(model_name))
 
 
 
