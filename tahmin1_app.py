@@ -71,22 +71,3 @@ if st.button("Vorhersagen"):
     st.success("Der geschätzte Preis Ihres Autos beträgt {} €. ".format(int(prediction[0])))
     
 
-
-
-#The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
-base = "light"
-
-# Primary accent color for interactive elements.
-primaryColor ="#375989"
-
-# Background color for the main content area.
-backgroundColor ="#0ac7fd"
-
-# Background color used for the sidebar and most interactive widgets.
-secondaryBackgroundColor = "#f1e730"
-
-# Color used for almost all text.
-textColor ="#f9fafc"
-
-# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
-#font ="sans serif"
